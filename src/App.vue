@@ -43,6 +43,8 @@ export default {
     }
   },
   methods:{
+    // fetching data on the api based on the city or country
+    // and set it to the weather object
     fetchWeather (e) {
       if (e.key == "Enter") {
         fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
